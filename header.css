@@ -1,0 +1,457 @@
+:root {
+    --main-color: #ff9d02;
+    --Title-color: #232323;
+    --paragraph-color: #8e8e8e;
+}
+
+/*Responsive */
+@media (min-width:2100px) {
+
+    /*----------------------------------------------              >2100 px               -----------------------------------------------*/
+    .container {
+        width: 2000px;
+    }
+
+    .land-container .container {
+        width: 2000px;
+        padding: 0px;
+
+    }
+
+    .header a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 120px
+    }
+
+    .but {
+        width: 180px;
+        height: 56px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+        gap: 50px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .header li:hover::after {
+        width: 120%;
+        color: white;
+    }
+
+    .header li:hover a {
+        color: white;
+    }
+
+    .header li a {
+        color: #232323;
+    }
+
+    .header label {
+        display: none;
+    }
+
+
+
+}
+
+@media (max-width:2100px) {
+
+    /*----------------------------------------------              <2100 px               -----------------------------------------------*/
+    .container {
+        width: 80%;
+    }
+
+    .land-container .container {
+        padding: 0px;
+    }
+
+    .header a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .but {
+        width: 180px;
+        height: 56px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+        gap: 50px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+
+    .header li:hover::after {
+        width: 120%;
+        color: white;
+    }
+
+
+    .header li:hover a {
+        color: white;
+    }
+
+
+    .logo img {
+        width: 90px;
+        height: 90px
+    }
+
+    .header label {
+        display: none;
+    }
+
+    .header li a {
+        color: #232323;
+    }
+
+
+}
+
+@media (max-width:1800px) {
+
+    /*----------------------------------------------              <1800 px               -----------------------------------------------*/
+    .container {
+        width: 80%;
+    }
+
+    .land-container .container {
+        width: 80%;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 90px
+    }
+
+}
+
+@media (max-width:1600px) {
+
+    /*----------------------------------------------              <1600 px               -----------------------------------------------*/
+    .container {
+        width: 80%;
+    }
+
+    .header a {
+        font-size: 16px;
+    }
+
+    .header .navbar {
+        gap: 20px;
+    }
+
+    .but {
+        padding: 5px;
+        width: 140px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px
+    }
+}
+
+@media (max-width:1400px) {
+
+    /*----------------------------------------------              <1400 px               -----------------------------------------------*/
+    .container {
+        width: 85%;
+    }
+
+    .but {
+        padding: 5px;
+    }
+
+
+}
+
+@media (max-width:1200px) {
+
+    /*----------------------------------------------              <1200 px               -----------------------------------------------*/
+    .container {
+        width: 900px;
+    }
+
+    .header a {
+        font-size: 14px;
+    }
+
+    .header .navbar {
+        gap: 10px;
+    }
+
+    .but {
+        padding: 5px;
+        width: 140px;
+        height: 35px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px
+    }
+
+}
+
+@media (max-width:992px) {
+
+    /*----------------------------------------------              <967 px               -----------------------------------------------*/
+    .container {
+        width: 700px;
+    }
+
+
+
+    .header .navbar {
+        position: absolute;
+        flex-direction: column;
+        top: -700px;
+        max-height: calc(100vh - 86px);
+        right: 0;
+        left: 0;
+        background-color: #ff9d02;
+        justify-content: center;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        gap: 50px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0 7px 20px 0px rgba(000, 000, 000, 0.2);
+        z-index: 5;
+    }
+
+    .header li {
+        display: flex;
+        padding: 10px;
+        padding-left: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: white 5px solid;
+        height: 70px;
+        width: 650px;
+        justify-content: center;
+        transition: 0.4s all ease;
+    }
+
+    .header li a {
+        font-size: 20px;
+    }
+
+    .navbar.active {
+        top: 100%
+    }
+
+    .header li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header li:hover a {
+        color: #ff9d02;
+        padding-left: 20px;
+    }
+
+    .header li:hover {
+        background-color: white;
+    }
+
+    .header li:hover::after {
+        width: 0;
+        color: white;
+    }
+
+    .but {
+        margin-left: 0px;
+    }
+
+    .header label {
+        display: inline-block;
+    }
+
+    .header li a {
+        color: white;
+    }
+}
+
+@media (max-width:768px) {
+
+    /*----------------------------------------------              <768 px               -----------------------------------------------*/
+    .container {
+        width: 500px;
+    }
+
+    .but {
+        width: 90px;
+    }
+
+    .header .navbar {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .header .navbar li {
+        width: 480px;
+    }
+
+    .header li a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:575px) {
+
+    /*----------------------------------------------              <575 px               -----------------------------------------------*/
+    .container {
+        width: 280px;
+    }
+
+    .but {
+        width: 90px;
+    }
+
+    .header .navbar {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .header .navbar li {
+        width: 250px;
+        height: 50px;
+    }
+
+    .header li a {
+        font-size: 15px;
+    }
+}
+
+/*menu responsive*/
+
+
+/*----------landing page-----------------*/
+.land-container-page {
+    height: 120vh;
+    background-image: url(../imgs/Untitled-2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+/*----------header section-----------------*/
+
+.header {
+    background-color: #ff9d02;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    z-index: 1000;
+
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.header .navbar {
+    display: flex;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.4s all ease;
+}
+
+
+
+.header li {
+    font-weight: 500;
+}
+
+/* Underline hover effect  */
+.header li::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    margin: auto;
+    background-color: white;
+    transition: 0.5s all ease;
+}
+
+.list .but {
+    display: flex;
+    border: solid 3px white;
+    border-radius: 70px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease;
+    cursor: pointer;
+}
+
+.list .but:hover {
+    background-color: red;
+    border: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+.header label {
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.4s all ease;
+}
+
+.header label:hover {
+    color: white;
+
+}
